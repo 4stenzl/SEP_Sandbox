@@ -28,7 +28,7 @@ class AutosController < ApplicationController
 
     respond_to do |format|
       if @auto.save
-        format.html { redirect_to @auto, notice: 'Auto was successfully created.' }
+        format.html { redirect_to @auto, alert: 'Auto was successfully created.' }
         format.json { render :show, status: :created, location: @auto }
       else
         format.html { render :new }

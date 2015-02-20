@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   #get 'user_sessions/create'
 
   #get 'user_sessions/destroy'
-  root :to => 'home#index'
+  get 'home/index'
+  root 'home#index'
   resources :user_sessions
   resources :users
 
@@ -13,7 +14,7 @@ Rails.application.routes.draw do
 
   resources :autos
 
-  get 'home/index'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
