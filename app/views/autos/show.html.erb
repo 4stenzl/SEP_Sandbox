@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Farbe:</strong>
+  <%= @auto.farbe %>
+</p>
+
+<p>
+  <strong>Anzahl sitze:</strong>
+  <%= @auto.anzahl_sitze %>
+</p>
+
+<p>
+  <strong>Gekauft:</strong>
+  <%= @auto.gekauft %>
+</p>
+
+<%= link_to 'Edit', edit_auto_path(@auto) %> |
+<%= link_to 'Back', autos_path %>

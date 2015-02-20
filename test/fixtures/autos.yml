@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  farbe: MyString
+  anzahl_sitze: 1
+  gekauft: false
+
+two:
+  farbe: MyString
+  anzahl_sitze: 1
+  gekauft: false
