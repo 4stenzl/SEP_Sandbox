@@ -1,4 +1,14 @@
 class AutosController < ApplicationController
+
+  before_filter :authorize, :only => [:new]
+  def authorize
+    @user = User.find(current_user.id)
+    unless @user.admin
+      redirect_back_or_to(:home_index, alert: "You are no admin")
+    end
+  end
+
+
   before_action :set_auto, only: [:show, :edit, :update, :destroy]
 
   # GET /autos

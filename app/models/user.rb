@@ -6,4 +6,7 @@ class User < ActiveRecord::Base
   validates :password_confirmation, presence: true
 
   validates :email, uniqueness: true
+  validates :admin, :inclusion => {:in => [true, false]}
+  validates :teacher, :inclusion => {:in => [true, false]}
+  validates :learner, :inclusion => {:in => [true, false]}
 end

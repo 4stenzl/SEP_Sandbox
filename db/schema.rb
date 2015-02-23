@@ -25,6 +25,9 @@ ActiveRecord::Schema.define(version: 20150219114938) do
     t.string   "email",            null: false
     t.string   "crypted_password"
     t.string   "salt"
+    t.boolean  "admin"
+    t.boolean  "teacher"
+    t.boolean  "learner"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
